@@ -1,0 +1,16 @@
+Designator,Footprint,Mid X,Mid Y,Ref X,Ref Y,Pad X,Pad Y,Layer,Rotation,Comment
+C1,C_0402_1005Metric,6.319999mm,4.8mm,6.319999mm,4.8mm,6.799999mm,4.8mm,T,180,0.1uF(NC)
+D1,LED_0603_1608Metric,18.3mm,7.3mm,18.3mm,7.3mm,18.3mm,6.5125mm,T,90,LED
+R1,R_0402_1005Metric,6.29mm,7.3mm,6.29mm,7.3mm,5.78mm,7.3mm,T,0,10K
+R2,R_0402_1005Metric,6.29mm,6.3mm,6.29mm,6.3mm,6.8mm,6.3mm,T,180,10K(NC)
+R3,R_0402_1005Metric,6.29mm,8.8mm,6.29mm,8.8mm,5.78mm,8.8mm,T,0,0R(NC)
+R4,R_0402_1005Metric,6.29mm,9.8mm,6.29mm,9.8mm,6.8mm,9.8mm,T,180,0R
+R5,R_0402_1005Metric,17.79mm,9.8mm,17.79mm,9.8mm,18.3mm,9.8mm,T,180,2K
+kibuzzard-631DB129,kibuzzard-631DB129,12.3mm,13.0mm,12.3mm,13.0mm,12.3mm,13.0mm,T,180,G***
+kibuzzard-631DDDB8,kibuzzard-631DDDB8,5.8mm,18.3mm,5.8mm,18.3mm,5.8mm,18.3mm,T,0,G***
+kibuzzard-631DDE16,kibuzzard-631DDE16,4.8mm,1.3mm,4.8mm,1.3mm,4.8mm,1.3mm,T,0,G***
+Through Hole Items ,,,,,,,,,,
+H1,MountingHole_2.2mm_M2,22.3mm,9.8mm,22.3mm,9.8mm,22.3mm,9.8mm,T,0,MountingHole
+H2,MountingHole_2.2mm_M2,2.3mm,9.8mm,2.3mm,9.8mm,2.3mm,9.8mm,T,0,MountingHole
+J1,PinHeader_1x03_P2.54mm_Vertical,14.84mm,15.3mm,14.84mm,15.3mm,14.84mm,15.3mm,T,-90,Conn_01x03
+SW1,SW_Push_DPDT_8.5x8.5mm,12.3mm,7.3mm,12.3mm,7.3mm,15.0mm,4.8mm,T,180,PUSH
