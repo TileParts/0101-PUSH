@@ -36,6 +36,19 @@
   )
 
   (setup
+    (stackup
+      (layer "F.SilkS" (type "Top Silk Screen") (color "White"))
+      (layer "F.Paste" (type "Top Solder Paste"))
+      (layer "F.Mask" (type "Top Solder Mask") (color "Purple") (thickness 0.01))
+      (layer "F.Cu" (type "copper") (thickness 0.035))
+      (layer "dielectric 1" (type "core") (thickness 1.11) (material "FR4") (epsilon_r 4.5) (loss_tangent 0.02))
+      (layer "B.Cu" (type "copper") (thickness 0.035))
+      (layer "B.Mask" (type "Bottom Solder Mask") (color "Purple") (thickness 0.01))
+      (layer "B.Paste" (type "Bottom Solder Paste"))
+      (layer "B.SilkS" (type "Bottom Silk Screen") (color "White"))
+      (copper_finish "None")
+      (dielectric_constraints no)
+    )
     (pad_to_mask_clearance 0.05)
     (solder_mask_min_width 0.1)
     (aux_axis_origin 97.7 119.8)
@@ -181,7 +194,7 @@
       (net 2 "/KEY") (pintype "passive") (tstamp 517994ca-7fbe-4769-a764-2bb8a1ade8bc))
     (pad "2" smd roundrect (at 0.48 0 180) (size 0.56 0.62) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25)
       (net 1 "GND") (pintype "passive") (tstamp 51dc742d-839e-41d8-a722-6890abfdced1))
-    (model "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -228,7 +241,7 @@
       (net 1 "GND") (pinfunction "K") (pintype "passive") (tstamp 45a293ae-3513-4044-9774-cb810e7705c9))
     (pad "2" smd roundrect (at 0.7875 0 90) (size 0.875 0.95) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25)
       (net 3 "Net-(D1-Pad2)") (pinfunction "A") (pintype "passive") (tstamp 628bab5a-2cec-4cba-9f58-3b265158f28c))
-    (model "${KICAD6_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -280,7 +293,7 @@
       (net 2 "/KEY") (pinfunction "Pin_2") (pintype "passive") (tstamp 2142da7d-771a-4a50-9c3c-2285dca3d2bf))
     (pad "3" thru_hole oval (at 0 5.08 270) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
       (net 1 "GND") (pinfunction "Pin_3") (pintype "passive") (tstamp 210cda1e-a7b2-4468-becf-f2e1d2042225))
-    (model "${KICAD6_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x03_P2.54mm_Vertical.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x03_P2.54mm_Vertical.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -325,7 +338,7 @@
       (net 4 "VCC") (pintype "passive") (tstamp 49ebc800-64ae-40ab-b0bc-61ce187fcf13))
     (pad "2" smd roundrect (at 0.51 0) (size 0.54 0.64) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25)
       (net 2 "/KEY") (pintype "passive") (tstamp 0e5fdb84-3b92-4fae-9ec5-de5f6827d6e8))
-    (model "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -370,7 +383,7 @@
       (net 2 "/KEY") (pintype "passive") (tstamp 1215bcd8-d006-407c-8fed-37f8c0fe9a78))
     (pad "2" smd roundrect (at 0.51 0 180) (size 0.54 0.64) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25)
       (net 1 "GND") (pintype "passive") (tstamp af7a129e-0f6d-47fd-8755-293986df0d57))
-    (model "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -415,7 +428,7 @@
       (net 4 "VCC") (pintype "passive") (tstamp 808595e8-a98e-469a-9eda-180497367616))
     (pad "2" smd roundrect (at 0.51 0) (size 0.54 0.64) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25)
       (net 5 "Net-(R3-Pad2)") (pintype "passive") (tstamp 1d04b8e4-ae5b-41d0-8f56-75d8484cfa7f))
-    (model "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -460,7 +473,7 @@
       (net 5 "Net-(R3-Pad2)") (pintype "passive") (tstamp fc6ce314-3a33-4694-bb34-154b0cf6d230))
     (pad "2" smd roundrect (at 0.51 0 180) (size 0.54 0.64) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25)
       (net 1 "GND") (pintype "passive") (tstamp 50de46c3-eb39-40ef-a243-63037666d972))
-    (model "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -505,7 +518,7 @@
       (net 3 "Net-(D1-Pad2)") (pintype "passive") (tstamp 21cc26ec-2971-4e2f-a5b8-f2be03b4aec2))
     (pad "2" smd roundrect (at 0.51 0 180) (size 0.54 0.64) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25)
       (net 6 "Net-(R5-Pad2)") (pintype "passive") (tstamp df2c7d1a-06d9-4163-a8fd-93c794acff21))
-    (model "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1519,9 +1532,6 @@
   (gr_arc (start 119.800001 112.5) (mid 119.858579 112.358579) (end 120 112.300001) (layer "Edge.Cuts") (width 0.05) (tstamp d5578714-afe5-4578-b785-4fef3708e2a6))
   (gr_arc (start 100.2 101) (mid 100.434315 100.434315) (end 101 100.2) (layer "Edge.Cuts") (width 0.05) (tstamp e9fad424-59df-4482-9d66-877066b6000b))
   (gr_arc (start 120 107.699999) (mid 119.858579 107.641421) (end 119.800001 107.5) (layer "Edge.Cuts") (width 0.05) (tstamp ea17a77f-9f5e-4c3a-bff2-c1de2f3cd815))
-  (gr_text "#0101 PUSH\nV1.0" (at 115 107.5) (layer "B.SilkS") (tstamp d1eb76b4-474f-477c-831a-8227b7f4ceba)
-    (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
-  )
   (gr_text "JLCJLCJLCJLC" (at 110 116.5) (layer "B.SilkS") (tstamp ecdf003f-bc4b-4a5f-8f50-1220de114553)
     (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror))
   )
