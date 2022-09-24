@@ -447,7 +447,7 @@
       "idf": "",
       "netlist": "",
       "specctra_dsn": "",
-      "step": "../../TILE-3D/0101-PUSH.step",
+      "step": "0101-PUSH.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""
